@@ -253,11 +253,11 @@ In order to get started with RoboRumble, you should read this page:
 Note that the RoboRumble@Home client is built into Robocode and can
 be started using the batch/shell/command files:
 
-                Windows           UNIX / Linux     Mac OS
---------------- ----------------- ---------------- ---------------------
-**RoboRumble**  `roborumble.bat`  `roborumble.sh`  `roborumble.command`
-**MeleeRumble** `meleerumble.bat` `meleerumble.sh` `meleerumble.command`
-**TeamRumble**  `teamrumble.bat`  `teamrumble.sh`  `teamrumble.command`
+|Option         |Windows          |UNIX / Linux    |Mac OS               |
+|---------------|-----------------|----------------|---------------------|
+|**RoboRumble** |`roborumble.bat` |`roborumble.sh` |`roborumble.command` |
+|**MeleeRumble**|`meleerumble.bat`|`meleerumble.sh`|`meleerumble.command`|
+|**TeamRumble** |`teamrumble.bat` |`teamrumble.sh` |`teamrumble.command` |
 
 Two other competitions exists which are:
 
