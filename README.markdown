@@ -224,9 +224,9 @@ A good way to improve you self as a robot developer is to try out some
 real challenges. On the RoboWiki, two famous challenges exist for
 testing/studying a robots movement, targeting, and gun abilities:
 
--   [Movement Challenge](http://robowiki.net/wiki/Movement_Challenge_(original))
--   [Targeting Challenge](http://robowiki.net/wiki/Targeting_Challenge_(original))
--   [RoboRumble Gun Challenge](hhttp://robowiki.net/wiki/RoboRumble_Gun_Challenge)
+-   [Movement Challenge](http://robowiki.net/wiki/Movement_Challenge_(original)
+-   [Targeting Challenge](http://robowiki.net/wiki/Targeting_Challenge_(original)
+-   [RoboRumble Gun Challenge](http://robowiki.net/wiki/RoboRumble_Gun_Challenge)
 
 ### 9. COMPETITION
 
