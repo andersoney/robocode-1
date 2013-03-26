@@ -162,6 +162,8 @@ public class ED4 extends AdvancedRobot
 		setFire(firePower);
 	}
 
+
+
 	public void onHitWall(HitWallEvent e){
 		DnM = -DnM;
 		setTurnRight(60);
@@ -171,18 +173,18 @@ public class ED4 extends AdvancedRobot
 	public void onDeath(DeathEvent e){
         deathCount++;
     }
-	public void onScannedObstacle(ScannedObstacleEvent e){
-		double obsDist = e.getDistance();
-		double obsB = e.getBearing();
-		double obsBearing = getHeadingRadians() + e.getBearingRadians();
-		double oY = getY()+e.getDistance()*Math.sin(obsBearing);
-		double oX = getX()+e.getDistance()*Math.cos(obsBearing);
-		double oW = e.getWidth();
-		double oH = e.getHeight();
-		double oR = (Math.max(oW,oH))/2 + 50;
-		if(obsDist < oR){
-			setTurnRight(e.getBearing() + 120);
-			setAhead(100);
-		}
-	}
+//	public void onScannedObstacle(ScannedObstacleEvent e){
+//		double obsDist = e.getDistance();
+//		double obsB = e.getBearing();
+//		double obsBearing = getHeadingRadians() + e.getBearingRadians();
+//		double oY = getY()+e.getDistance()*Math.sin(obsBearing);
+//		double oX = getX()+e.getDistance()*Math.cos(obsBearing);
+//		double oW = e.getWidth();
+//		double oH = e.getHeight();
+//		double oR = (Math.max(oW,oH))/2 + 50;
+//		if(obsDist < oR){
+//			setTurnRight(e.getBearing() + 120);
+//			setAhead(100);
+//		}
+//	}
 }
