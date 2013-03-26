@@ -1,5 +1,7 @@
 package me.joebass;
 import robocode.*;
+import robocode.util.Utils;
+
 import java.awt.Color;
 
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/Robot.html
@@ -20,13 +22,19 @@ public class Robot1 extends AdvancedRobot
 
 		setColors(Color.red,Color.blue,Color.green); // body,gun,radar
 
+		setAdjustRadarForGunTurn(false);
 		// Robot main loop
+
 		while(true) {
+			turnRadarRightRadians(Double.POSITIVE_INFINITY);
 			// Replace the next 4 lines with any behavior you would like
-			ahead(100);
-			turnGunRight(360);
-			back(100);
-			turnGunRight(360);
+//			ahead(100);
+//			turnGunRight(360);
+//			back(100);
+//			turnGunRight(360);
+
+
+			scan();
 		}
 	}
 
@@ -35,7 +43,17 @@ public class Robot1 extends AdvancedRobot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
 		// Replace the next line with any behavior you would like
-		fire(1);
+		double radarTurn = getHeadingRadians() + e.getBearingRadians() - getRadarHeadingRadians();
+//		System.out.println("Turning radar to: " + Utils.normalRelativeAngle(radarTurn) * (180 / Math.PI));
+//		System.out.println("Radar currently is: " + this.getRadarHeadingRadians() * (180 / Math.PI));
+//		System.out.println("Gun currently is: " + this.getGunHeadingRadians() * (180 / Math.PI));
+
+		setTurnRadarRightRadians(Utils.normalRelativeAngle(radarTurn));
+//		setTurnGunRightRadians(getHeadingRadians() + (getRadarHeadingRadians() - getGunHeadingRadians()));
+//		setTurnGunRightRadians(Utils.normalRelativeAngle(radarTurn));
+//		System.out.println("Found a robot!");
+
+//		fire(1);
 	}
 
 	/**
@@ -43,7 +61,7 @@ public class Robot1 extends AdvancedRobot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
-		back(10);
+//		back(10);
 	}
 	
 	/**
