@@ -1,3 +1,17 @@
+## Version 1.8.1.0 (24-Mar-2013)
+
+### Bug fixes
+* [Bug-335][]/[Bug-336][]: Skipped turns ... issues.
+* [Bug-349][]: Instances of RobocodeEngine don't seem to be independant - memory leak and performance decrease.
+* [Bug-350][]: Bullet id from battle record XML file is sometimes -1 causing a NumberFormatException.
+* [Bug-351][]: Robot.onBattleEnded(BattleEndedEvent) provides wrong scores.
+* [Bug-352][]: Results from BattleCompletedEvent.getIndexedResults() are always sorted.
+* [Bug-353][]: RobocodeEngine.setVisible() can cause a NullPointerException.
+* [Bug-354][]: Replaying an XML record can cause an ArrayIndexOutOfBoundsException.
+* [Bug-355][]: Priority battles not accepted for mini/micro/nano rumbles.
+* [Bug-356][]: Update Roborumble URLs from Darkcanuck to LiteRumble.
+* [Bug-357][]: Tab characters are inserted in the last line of a robot source file when opening it.
+
 ## Version 1.8.0.0 (30-Jan-2013)
 
 ### Bug fix
@@ -2803,6 +2817,8 @@ Currently, there is one known issue, which will be fixed with the next Beta or i
 [Bug-332]: http://sourceforge.net/p/robocode/bugs/332/  (Use OpenGL backend under linux)
 [Bug-333]: http://sourceforge.net/p/robocode/bugs/333/  (.NET runs release dll not debug dll so can't debug)
 [Bug-334]: http://sourceforge.net/p/robocode/bugs/334/  (Snapshot API never shows bullets in "HIT_WALL" status)
+[Bug-335]: http://sourceforge.net/p/robocode/bugs/335/  (Skipped turns ... issues)
+[Bug-336]: http://sourceforge.net/p/robocode/bugs/336/  (Skipped turns ... issues)
 [Bug-337]: http://sourceforge.net/p/robocode/bugs/337/  (Hangups with New Editor in 1.7.4.0)
 [Bug-338]: http://sourceforge.net/p/robocode/bugs/338/  ("Accept-Encoding: gzip" not in Roborumble HTTP Headers)
 [Bug-339]: http://sourceforge.net/p/robocode/bugs/339/  (All Text Missing)
@@ -2814,6 +2830,15 @@ Currently, there is one known issue, which will be fixed with the next Beta or i
 [Bug-346]: http://sourceforge.net/p/robocode/bugs/346/  (Cannot extract sources from robot packages)
 [Bug-347]: http://sourceforge.net/p/robocode/bugs/347/  (/bin/sh^M bad interpreter)
 [Bug-348]: http://sourceforge.net/p/robocode/bugs/348/  (.NET: UnauthorizedAccessException in AppDomainShell.Dispose())
+[Bug-349]: http://sourceforge.net/p/robocode/bugs/349/  (Instances of RobocodeEngine don't seem to be independant - memory leak and performance decrease)
+[Bug-350]: http://sourceforge.net/p/robocode/bugs/350/  (Bullet id from battle record XML file is sometimes -1 causing a NumberFormatException)
+[Bug-351]: http://sourceforge.net/p/robocode/bugs/351/  (Robot.onBattleEnded(BattleEndedEvent) provides wrong scores)
+[Bug-352]: http://sourceforge.net/p/robocode/bugs/352/  (Results from BattleCompletedEvent.getIndexedResults() are always sorted)
+[Bug-353]: http://sourceforge.net/p/robocode/bugs/353/  (RobocodeEngine.setVisible() can cause a NullPointerException)
+[Bug-354]: http://sourceforge.net/p/robocode/bugs/354/  (Replaying an XML record can cause an ArrayIndexOutOfBoundsException)
+[Bug-355]: http://sourceforge.net/p/robocode/bugs/355/  (Priority battles not accepted for mini/micro/nano rumbles)
+[Bug-356]: http://sourceforge.net/p/robocode/bugs/356/  (Update Roborumble URLs from Darkcanuck to LiteRumble)
+[Bug-357]: http://sourceforge.net/p/robocode/bugs/357/  (Tab characters are inserted in the last line of a robot source file when opening it)
 
 [Req-1]:   http://sourceforge.net/p/robocode/feature-requests/1/    (Multiple or hyperthreading CPUs (most P4s) hangs Robocode)
 [Req-2]:   http://sourceforge.net/p/robocode/feature-requests/2/    (Keep window size of "New battle" window)
